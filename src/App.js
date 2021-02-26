@@ -8,9 +8,9 @@ function App() {
     <div className="App">
       <h1>Hello</h1>
       <p>Sweet!</p>
-      <Person />
-      <Person />
-      <Person />
+      <Person name="Obito" age="26"/>
+      <Person name="Itachi" age="21"/>
+      <Person name="Sasuke" age="17">I'm always angry.</Person>
     </div>
   );
 }
