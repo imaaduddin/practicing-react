@@ -1,10 +1,14 @@
-import { render } from "@testing-library/react";
-import React, { Component } from "react";
+// import { render } from "@testing-library/react";
+import React from "react";
 // import logo from './logo.svg';
 import './App.css';
 import Person from "./Person/Person";
 
-class App extends Component {
+class App extends React.Component {
+  constructor() {
+    super();
+  }
+
   state = {
     persons: [
       {name: "Obito", age: 26},
@@ -36,7 +40,8 @@ class App extends Component {
         <Person name={this.state.persons[1].name} age={this.state.persons[1].age}/>
         <Person name={this.state.persons[2].name} age={this.state.persons[2].age}>I'm always angry.</Person>
       </div>
-  );
+    );
+  }
 }
 
 export default App;
